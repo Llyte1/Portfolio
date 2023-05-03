@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap');
+
+:root{
+    --color-black:#000000;
+    --color-white:#fff;
+    --color-dark:#21243D;
+    --color-primary:#FF6464;
+    --color-bg-light:#EDF7FA;
+    --color-darkblue:#142850;
+    --color-grey-light:#8695A4;
+    --color-grey:#E0E0E0;
+    --color-skyblue: #00A8CC;
+
+    --color-facebook: #4267B2 ;
+    --color-instagram: #833AB4 ;
+    --color-twitter: #1DA1F2;
+    --color-linkin: #0e76a8;
+
+
+
+    --primary-font:"Heebo", sans-serif;
+   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,body{
+    font-family: var(--primary-font);
+}
+title{
+    margin: 50;
+    padding: 67;
+    box-sizing: border-box;
+    font-family:monospace
+}
+/* default styling */
+.navbar{
+    margin-bottom: 120px;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.navbar .container{
+    max-width: 1400px ;
+}
+
+.nav-toggler{
+    display: none;
+}
+
+.img-responsive{
+    max-width: 100%;
+    height: auto ;
+}
+.underline{
+    background: var(--color-grey);
+    width: 100%;
+    height: 1.5px;
+    border: none;
+}
+
+/*............................ main styling ....................*/
+
+main{
+    margin-block: 84px;
+}
+
+/*............................. Header styling .................*/
+
+.header-contents{
+    display: flex;
+    gap: 120px;
+    width: 100%;
+}
+
+.header-info{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 40px;
+    max-width: 90ch;
+}
+.title{
+    color: var(--color-dark);
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 80px;
+}
+.sub-title{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Heebo", sans-serif;
+    line-height: 24px;
+    color: var(--color-dark);
+}
+.btn{
+    font-family: "Heebo", sans-serif;
+    padding: 10px 20px ;
+    color: var(--color-white);
+    border-radius: 2px;
+    background: var(--color-primary);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.btn:hover{
+   background-color: red;
+}
+
+.header-img{
+    width: 30%;
+}
+.header-img > img{
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+.header-img > img:hover{
+    box-shadow: 0 0 4px 8px var(--color-primary);
+}
+
+/*...................... post styling ..........................*/
+
+.post{
+    background: var(--color-bg-light);
+    padding-top: 8px ;
+    padding-bottom: 32px;
+}
+
+.post-card-head{
+    font-family: "Heebo", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.post-card-head > p{
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--color-dark);
+    line-height: 32px;
+    padding: 15px 0;
+    background: transparent;
+    
+}
+.post-card-head > a{
+   background: transparent;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--color-skyblue);
+    text-decoration: none;
+}
+
+.post-cards{
+    display: flex;
+    gap: 50px;
+    color: var(--color-dark);
+    background: var(--color-bg-light);
+}
+.card{
+    font-family: "Heebo", sans-serif;
+   padding: 50px;
+   background: var(--color-white);
+   
+}
+.card span{
+    font-weight:700;
+    font-size: 26px;
+    line-height: 38px;
+    max-width: 20ch;
+}
+.card-date{
+    display: flex;
+    position: relative;
+    padding-block: 14px;
+}
+.card-date > p{
+    font-family: "Heebo", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.card-date > p:first-child::after{
+    content: "";
+    width: 22px;
+    background: var(--color-white);
+    height: 2px;
+    position: absolute;
+    transform: rotate(90deg);
+    top: 24px;
+    left: 118px;
+}
+.card-date > p:nth-child(1){
+    margin-right: 60px;
+}
+.card-details{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/*...................... works section stying ..................*/
+
+.works-contents{
+    width: 100%;
+    font-family: "Heebo", sans-serif;
+}
+.works-contents > h2{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 60px;
+    color: var(--color-dark);
+    padding-block: 8px;
+    margin-top: 12px;
+}
+.works-cards{
+    background-image: url("pictures/wambo 2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.works-cards{
+    display: flex;
+    gap: 30px;
+    margin-block: 22px;
+}
+.works-cards > img{
+    width: 30%;
+    border-radius: 6px;
+}
+.works-cards-details{
+    width: 70%;
+}
+.works-card-title{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    color: var(--color-dark) ;
+}
+.works-card-items{
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    margin-block: 16px;
+}
+.works-card-items > p:first-child{
+    background: var(--color-darkblue);
+    color: var(--color-white);
+    font-weight: 900;
+    padding: 4px 12px;
+    font-size: 18px ;
+    border-radius: 16px;
+}   
+.works-card-items > p:nth-child(2){
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--color-grey-light);
+}
+.works-card-info > p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-dark);
+    max-width: 62ch;
+}
+
+ /*....................... footer styling....................... */
+.footer{
+    margin-top: 84px;
+}
+.footer-contents{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-block: 54px;
+    font-family: "Heebo", sans-serif;
+
+}
+.footer-icons{
+    margin-bottom: 26px;
+    display: flex;
+    gap: 36px;
+}
+
+.footer-icons a i{
+    color: var(--color-dark);
+    font-size: 40px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.footer-icons > p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20;
+    color:  var(--color-dark);
+}
+.footer-icons a > .fa-facebook-square:hover{
+    color: var(--color-facebook);
+}
+.footer-icons a > .fa-instagram:hover{
+    color: var(--color-instagram);
+}
+.footer-icons a > .fa-twitter:hover{
+    color: var(--color-twitter);
+}
+.footer-icons a > .fa-linkedin:hover{
+    color: var(--color-linkin);
+}
+
+
+
